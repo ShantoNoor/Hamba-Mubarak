@@ -1,0 +1,90 @@
+html {
+  cursor: url(img/knife.png), auto; 
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 90vh;
+}
+
+h1 {
+  font-family: serif;
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+.cow-head {
+  text-align: center;
+  position: relative;
+}
+
+.eye-left {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  position: absolute;
+  top: 140px;
+  left: 106px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.eye-right {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  position: absolute;
+  top: 140px;
+  left: 239px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.eye-inner {
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 2px;
+    left: 8px;
+    border-radius: 50%;
+}
+
+.mouth {
+  background-color: #5f1212;
+  position: absolute;
+  height: 25px;
+  width: 70px;
+  top: 317px;
+  left: 160px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: all .2s ease-out;
+}
+
+.cow-head:hover .mouth {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  height: 10px;
+}
+
+.fear {
+  position: absolute;
+  height: 78px;
+  width: 187px;
+  top: 63px;
+  left: 101px;
+  border-radius: 50%;
+  transition: all .2s ease-out;
+  background: #b92b27;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 0, 0, .9));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgba(255, 0, 0, .9)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  opacity: 0;
+}
+
+.cow-head:hover .fear {
+  opacity: 1;
+}
